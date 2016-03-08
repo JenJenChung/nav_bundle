@@ -6,6 +6,8 @@
   
   <!-- Include move base launch file -->
   <!-- Use with Pioneer Gazebo simulation and Pioneer3dx robot platform -->
+  <remap from="cmd_vel" to="cmd_vel_estop"/>
+  
 	<include file="$(find pioneer_2dnav)/move_base.launch"/>
 	
 	<!-- Use with stagebot simulation -->
