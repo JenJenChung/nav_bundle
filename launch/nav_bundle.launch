@@ -1,13 +1,6 @@
 <launch>
   <!-- SLAM mapping nodes -->
   <node pkg="gmapping" type="slam_gmapping" name="gmapping">
-      <!-- Use with Pioneer Gazebo simulation -->
-<!--  		<remap from="scan" to="pioneer/laser/scan"/>-->
-  		
-  		<!-- Use on Pioneer3dx robot platform -->
-<!--		  <remap from="scan" to="laserScan"/>	-->
-      
-      <!-- Use with stagebot_2dnav -->
 		  <remap from="scan" to="base_scan"/> 
   </node>
   
