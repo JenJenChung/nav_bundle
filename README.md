@@ -5,7 +5,7 @@ nav bundle with roslaunch file calling:
 - simple_navigation_goals
   - waypoint server/client nodes
 
-NOTE: MAKE SURE TO CALL THE NAVIGATION PACKAGE RELEVANT TO YOUR ROBOT ON LINE 10.
+NOTE: MAKE SURE TO CALL THE NAVIGATION PACKAGE RELEVANT TO YOUR ROBOT ON LINE 9 OR LINE 12.
 
 For pioneer gazebo simulation or hardware use pioneer_2dnav.
 
