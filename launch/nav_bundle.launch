@@ -6,12 +6,13 @@
   
   <!-- Include move base launch file -->
   <!-- Use with Pioneer Gazebo simulation and Pioneer3dx robot platform -->
-  <remap from="cmd_vel" to="cmd_vel_estop"/>
-  
 	<include file="$(find pioneer_2dnav)/move_base.launch"/>
 	
 	<!-- Use with stagebot simulation -->
 <!--	<include file="$(find stagebot_2dnav)/move_base.launch"/> -->
+
+  <!-- Use with estop -->
+<!--  <remap from="cmd_vel" to="cmd_vel_estop"/>-->
   
   <!-- Move base clients for waypoint navigation -->
   <node pkg="simple_navigation_goals" type="base_link_navigation_client" name="base_link_goal_client" output="screen"/>
