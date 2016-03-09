@@ -11,3 +11,4 @@ For pioneer gazebo simulation or hardware use pioneer_2dnav.
 
 For erratic stage robot simulation use stagebot_2dnav
 
+NOTE: UNCOMMENT LINE 15 IF INCLUDING ESTOP CAPABILITIES FROM https://github.com/nrjl/rqt_estop.git
