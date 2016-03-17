@@ -6,8 +6,7 @@
   
   <!-- Include move base launch file -->
   <!-- Use with Pioneer Gazebo simulation and Pioneer3dx robot platform -->
-	<include file="$(find pioneer_2dnav)/move_base.launch">
-  </include>
+	<include file="$(find pioneer_2dnav)/move_base.launch"/>
 	
 	<!-- Use with stagebot simulation -->
 <!--	<include file="$(find stagebot_2dnav)/move_base.launch"/> -->
