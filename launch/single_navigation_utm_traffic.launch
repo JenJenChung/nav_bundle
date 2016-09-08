@@ -19,5 +19,6 @@
     <include file="$(find utm_traffic)/launch/pioneer_traffic.launch">
       <arg name="robot_name" value="$(arg robot_name)"/>
     </include>
+    <include file="$(find pioneer_delivery)/launch/delivery_waypoint.launch"/>
   </group>
 </launch>
