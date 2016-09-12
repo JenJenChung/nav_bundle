@@ -3,7 +3,7 @@
   <arg name="x" default="0"/>
   <arg name="y" default="0"/>
   <arg name="yaw" default="0"/>
-  
+
   <!-- Make sure initial pose matches $(find pioneer_description)/launch/pioneers.launch arg init_pose -->
   <param name="amcl/initial_pose_x" value="$(arg x)" />
   <param name="amcl/initial_pose_y" value="$(arg y)" />
@@ -16,9 +16,9 @@
 
   <include file="$(find pioneer_test)/launch/pioneer_controller_spin_recover.launch"/>
   
-  <include file="$(find utm_traffic)/launch/pioneer_traffic.launch">
+  <include file="$(find utm_traffic)/launch/pioneer_traffic_demo.launch">
     <arg name="robot_name" value="$(arg robot_name)"/>
   </include>
-  <include file="$(find pioneer_delivery)/launch/delivery_waypoint.launch"/>
-
+  <include file="$(find pioneer_delivery)/launch/delivery_waypoint_demo.launch"/>
+  <include file="$(find pioneer_test)/launch/odom_to_map.launch"/>
 </launch>
