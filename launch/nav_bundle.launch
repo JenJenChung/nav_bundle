@@ -1,12 +1,12 @@
 <launch>
   <!-- SLAM mapping nodes -->
   <node pkg="gmapping" type="slam_gmapping" name="gmapping">
-		  <remap from="scan" to="base_scan"/> 
+	  <remap from="scan" to="base_scan"/> 
   </node>
   
   <!-- Include move base launch file -->
   <!-- Use with Pioneer Gazebo simulation and Pioneer3dx robot platform -->
-	<include file="$(find pioneer_2dnav)/move_base.launch"/>
+  <include file="$(find pioneer_2dnav)/move_base.launch"/>
 	
 	<!-- Use with stagebot simulation -->
 <!--	<include file="$(find stagebot_2dnav)/move_base.launch"/> -->
