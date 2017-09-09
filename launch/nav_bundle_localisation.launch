@@ -11,7 +11,7 @@
   
   <!-- Include move base launch file -->
   <!-- Use with Pioneer Gazebo simulation and Pioneer3dx robot platform -->
-  <include file="$(find link_blocking_layer)/move_base.launch"/>
+  <include file="$(find link_blocking_layer)/move_base_global.launch"/>
   
   <!-- Move base clients for waypoint navigation -->
   <node pkg="simple_navigation_goals" type="base_link_navigation_client" name="base_link_goal_client" output="screen"/>
