@@ -1,5 +1,5 @@
 <launch>
-  <arg name="map_name" default="utm_0"/>
+  <arg name="map_name" default="maze"/>
   <param name="/use_sim_time" value="true"/>
 
   <!-- Run the map server -->
